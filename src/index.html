@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Currency Converter</title>
+        <!-- build:css -->
+        <link rel="stylesheet" href="assets/css/app.css">
+        <link rel="icon" type="image/ico" sizes="32x32" href="images/favicon-32x32_red.ico">
+        <link rel="icon" type="image/ico" sizes="16x16" href="images/favicon-16x16_red.ico">
+        <!-- endbuild -->
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="content">
+                <form name="currency_converter" method="POST">
+                    <div>
+                        <h1>Currency Converter</h1>
+                        <h6>Convert your currency in one click.</h6>
+                        <span>Transact all over the world</span>
+                    </div>
+                    <div class="inputGroup">
+                        <label for="currency_value">Convert: </label>
+                        <input type="number"
+                               name="currency_value"
+                               id="currency_value"
+                               class="text"
+                        >
+                    </div>
+
+                    <div class="inputGroup">
+                        <label for="currency_from">From: </label>
+                        <select name="currency_from"
+                                id="currency_from"
+                                class="text select">
+                            <option value="USD" selected>USD</option>
+                            <option value="USD" selected>NNG</option>
+                        </select>
+                    </div>
+
+
+                    <div class="inputGroup">
+                        <label for="currency_to">To: </label>
+                        <select name="currency_to"
+                                id="currency_to"
+                                class="text select">
+                            <option value="NNG" selected>USD</option>
+                            <option value="NNG" selected>NNG</option>
+                        </select>
+                    </div>
+
+                    <div class="buttonGroup">
+                        <button type="submit" class="btn-primary">Convert</button>
+                    </div>
+                </form>
+            </div>
+            <p style="text-align: center">Need to say something we missed?</p>
+            <p style="text-align: center">
+                Feel free to email us via
+                <a href="mailto:bakkareayomideo@gmail.com" target="_blank" class="link-default">bakkareayomideo@gmail.com</a>
+            </p>
+
+        </div>
+        <!-- build:js -->
+        <script type="text/javascript" src="./app.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>
