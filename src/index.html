@@ -32,7 +32,7 @@
 
                     <div class="inputGroup">
                         <label for="currency_from">From: </label>
-                        <select name="currency_from"
+                        <select name="from"
                                 id="currency_from"
                                 class="text select">
                             <option value="USD" selected>USD</option>
@@ -43,7 +43,7 @@
 
                     <div class="inputGroup">
                         <label for="currency_to">To: </label>
-                        <select name="currency_to"
+                        <select name="to"
                                 id="currency_to"
                                 class="text select">
                             <option value="NNG" selected>USD</option>
@@ -52,7 +52,7 @@
                     </div>
 
                     <div class="buttonGroup">
-                        <button type="submit" class="btn-primary">Convert</button>
+                        <button type="submit" class="btn-primary" id="convert">Convert</button>
                     </div>
                 </form>
             </div>
@@ -64,6 +64,10 @@
 
         </div>
         <!-- build:js -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script type="text/javascript" src="./app.js"></script>
         <!-- endbuild -->
     </body>
